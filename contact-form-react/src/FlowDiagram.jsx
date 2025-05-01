@@ -13,7 +13,6 @@ import { create } from 'zustand';
 import { FaWpforms, FaCogs, FaCheckCircle, FaGoogle, FaFileExcel } from 'react-icons/fa';
 import 'reactflow/dist/style.css';
 
-// Zustand store definition
 const useStoreState = create((set) => ({
   nodes: [
     {
@@ -86,14 +85,12 @@ const useStoreState = create((set) => ({
     })),
 }));
 
-// Status-based color mapping
 const statusColors = {
   pending: '#fff',
   success: '#d4edda',
   error: '#f8d7da',
 };
 
-// Custom Node Component
 const CustomNode = ({ data }) => (
   <div
     style={{
@@ -115,7 +112,6 @@ const CustomNode = ({ data }) => (
   </div>
 );
 
-// Node type registration
 const nodeTypes = {
   custom: CustomNode,
 };
