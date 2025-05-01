@@ -23,7 +23,7 @@ function ContactForm() {
     const { name, email, message } = formData;
     const data = { name, email, message };
 
-    const response = await fetch("http://localhost:5000/submit", {
+    const response = await fetch("https://formsubmissionvisualisationusingreactflo.onrender.com/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
